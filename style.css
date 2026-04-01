@@ -222,9 +222,10 @@ section{
   color: #13447f;
 }
 .section-title .line{
-   width: 100px;
-   height: 1px;
-   background-color: blue;
+  height: 2px;
+  width: 100px;
+  background-color: #1e66ff;
+
 }
 .section-descript{
    color: color(srgb 0.192157 0.282353 0.384314/0.5);
@@ -235,7 +236,7 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 90px;
   margin-left: 50px;
 
 }
@@ -307,6 +308,29 @@ section{
   font-size: 16px;
 
 }
+.icon-box {
+  display: flex;
+  gap: 20px;
+}
+.icon-box i{
+  width: 45px;
+  height: 45px;
+  background: #ebf3ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e66ff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.skill-cards h3{
+  font-family: Quicksand;
+  color: #1a4b8c;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
 .skill-item h4{
   color: #004a8c;
   font-size: 18px;
@@ -364,6 +388,9 @@ section{
   justify-content: center;
 
 }
+.btn-line{
+  align-items: center;
+}
 .btn-outline{
   padding: 15px 35px;
   border-radius: 50px;
@@ -391,4 +418,181 @@ section{
 .btn-inline:hover{
   background-color: #065cc2;
   color: #fff ;
+}
+.section-skills{
+  padding: 80px 0;
+  background-color: #f5f7fa;
+
+}
+.skills-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+  align-items: stretch;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+
+}
+.skill-cards{
+  background: #f0f7ff;
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid #e1e8f0;
+  border-top: 3px solid #1e66ff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+ 
+
+}
+.skill-cards:hover{
+  transform: translateY(-10px); 
+  border-color: #1e66ff;
+  box-shadow: 0 20px 40px rgba(30, 102, 255, 0.15); 
+
+}
+
+.card-header h3 {
+  font-family: Quicksand;
+  color: #1a4b8c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+ 
+}
+
+.skill-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a4b8c;
+}
+
+.skill-percent {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e66ff;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #f0f2f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1e66ff;
+  border-radius: 10px;
+}
+.expertise-sidebar{
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+  height: 100%;
+
+}
+.expertise-title{
+  font-family: Quicksand;
+  color: #1a4b8c;
+  font-size: 26px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.expertise-desc{
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+
+}
+.expertise-stats{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+
+}
+.stat-row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.stat-icon{
+  width: 44px;
+  height: 44px;
+  background: #1e66ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+
+}
+.stat-text h4{
+  font-size: 22px;
+  color: #1a4b8c;
+  margin: 0;
+  line-height: 1.2;
+
+}
+.stat-text p{
+  font-size: 13px;
+  color: #95a5a6;
+  margin: 0;
+
+}
+.certifications h3{
+  font-size: 16px;
+  color: #1a4b8c;
+  margin-bottom: 20px;
+
+}
+.cert-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+
+
+}
+.badge-pill{
+  background: #1e66ff;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+ 
+}
+.badge-pills{
+  background: #1e66ff;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
 }
