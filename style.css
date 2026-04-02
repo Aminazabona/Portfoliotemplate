@@ -220,11 +220,21 @@ section{
 .section-title{
   font-family: "Quicksand", sans-serif;
   color: #13447f;
+  display: flex;
+  gap: 10px;
 }
 .section-title .line{
-  height: 2px;
+height: 2px;
   width: 100px;
   background-color: #1e66ff;
+
+
+  flex: 1;
+  max-width: 100px;
+  height: 1px;
+  background-color: rgb(100, 100, 248);
+ 
+  margin-top: 20px;
 
 }
 .section-descript{
